@@ -1,3 +1,7 @@
+url: https://cpp-primer-5th-edition-solutions.github.io
+baseurl: /testsite
+sourcecode: https://cpp-primer-5th-edition-solutions.github.io/testsite
+
 collections:
   authors:
     output: true
