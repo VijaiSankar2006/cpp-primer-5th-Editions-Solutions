@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/*  Exercise 3.42: Write a program to copy a vector of ints into an array of ints   */
+
+#include <iostream>
+#include <vector>
+
+int main(){
+    std::vector<int> ivec{11,21,31,41,51,61,71,81,91,101};
+    int ia[10];
+
+    for( size_t i = 0; i < 10; ++i ){
+        ia[i] = ivec[i];
+    }
+
+    for( auto b = std::begin(ia); b != std::end(ia); ++b){
+        std::cout << *b << " ";
+    }
+
+    return 0;
+}
+</xmp></code></pre>

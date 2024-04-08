@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/*  Exercise 6.7: Write a function that returns 0 when it is first called and then generates numbers in sequence each time
+    it is called again */
+
+#include <iostream>
+
+//  counter takes no parameters and returns the no of times it is called
+int counter(){      
+    static size_t count = 0;        //  count is a local static varible, its value persists across function call
+    return count++;
+}
+
+int main(){
+
+    for(int i = 0; i <= 10; ++i){
+        std::cout << counter() << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+</xmp></code></pre>

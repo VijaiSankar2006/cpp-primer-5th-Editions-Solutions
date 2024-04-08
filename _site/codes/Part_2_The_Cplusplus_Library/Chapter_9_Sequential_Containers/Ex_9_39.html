@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_9_39.cpp
+ * @brief Exercise 9.39: Explain what the following program fragment does:
+ * vector<string> svec; 
+ * svec.reserve(1024); 
+ * string word; 
+ * while (cin >> word) 
+ *  svec.push_back(word); 
+ * svec.resize(svec.size()+svec.size()/2);
+ * @date 2023-12-31
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ *************************************************************************************************************************************************************/
+
+/**
+ * svec.reserve(1024), allocates a new memory for svec to hold a maximum of 1024 elements with out reallocating
+ * while(){}, will keep adding strings to svec as long as the user supplies
+ * svec.resize(svec.size() + svec.size()/2), will resize the vector with 50% more elements with empty string than what's added
+ * if resize results in more than the capacity of svec, then svec will be reallocated with new larger memory as resize requested
+ * or else capacity of svec remains same as resize a vector to smaller size doesn't reduce the capacity, (ie) no deallocation
+ * of memory happens.
+ * */
+</xmp></code></pre>

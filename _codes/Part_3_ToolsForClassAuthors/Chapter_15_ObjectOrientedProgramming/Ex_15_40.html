@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_15_40.cpp
+ * @brief Exercise 15.40: In the OrQuery eval function what would happen if its rhs member returned an empty set? What
+ *  if its lhs member did so? What if both rhs and lhs returned empty sets?
+ * @date 2024-02-08
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include "Ex_15_40.cpp"
+
+/************************************************************************************************************************************************************
+ * if rhs member returns empty set, the set constructed by eval() will have only line_no's from set returned lhs
+ * same thing will happen if lhs returns empty
+ * if both are empty, then set constructed by eval will be empty, and the QueryResult will have empty set indicating 
+ * word is not found in any line as per the query.
+ *      The output stream operator defined to print QueryResult will print 
+ * the <word> appeared 0 time in the file.
+ * where the word is OrQuery.rep(); 
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

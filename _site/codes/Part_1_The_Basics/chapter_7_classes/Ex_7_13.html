@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/*  Exercise 7.13: Rewrite the program from page 255 to use the istream constructor.*/
+
+#include <iostream>
+#include "Ex_7_12.cpp"
+
+int main(){
+    Sales_data total(std::cin), trans;  // total is instantiated by constructor with istream & parameter, trans by default
+
+    if( !total.isbn().empty() ){           // if total.book_no is not an empty string
+        while( read(std::cin, trans)){
+            if( total.isbn() == trans.isbn() ){
+                total.combine(trans);
+            }else{
+                print(std::cout, total);
+                total = trans;
+            }
+        }
+        print(std::cout , total);
+    }else{
+        std::cerr << "NO VALID INPUT" << std::endl;
+    }
+
+    return 0;
+}
+</xmp></code></pre>

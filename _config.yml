@@ -1,29 +1,27 @@
-url: https://cpp-primer-5th-edition-solutions.github.io
-baseurl: /testsite
-sourcecode: https://cpp-primer-5th-edition-solutions.github.io/testsite
-
 collections:
-  authors:
+  codes:
     output: true
+
+kramdown:
+  syntax_highlighter_opts:
+    disable : false
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
-    values:  
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:  
-      layout: "post"
+      type: "codes"
+    values:
+      layout: "code"
   - scope:
       path: ""
     values:
-      layout: "default"    
-
+      layout: "default"
+  - scope:
+      path: "codes"
+      type: "OtherWorks"
+    values:
+      layout: "default"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  

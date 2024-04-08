@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_14_14.cpp
+ * @brief Exercise 14.14: Why do you think it is more efficient to define operator+ to call operator+= rather than the other 
+ * way around?
+ * @date 2024-01-30
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * as arithmatic operations don't change the state of operands, they do the operation and store the result in a temp variable
+ * it is more natural to call compound assignment operator which exactly do that, do the operation and store the result in lhs.
+ *      If we make operator+= to call operator+, it adds two operands and store in a temp and return the temp, and then the temp
+ * will be assigned in the lhs of operator+=, as we can see we unnessarily copying the result twice. 
+ *************************************************************************************************************************************************************/
+
+</xmp></code></pre>

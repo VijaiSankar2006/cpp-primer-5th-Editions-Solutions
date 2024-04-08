@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/* Exercise 6.3: Write and test your own version of fact. */
+
+#include <iostream>
+
+//  fact function takes an int parameter and returns the result in integral type
+int fact(int num){
+    int res = 1;
+    for(int i = 1; i <= num; ++i){    //  for loop will multiply 1 * 2 *... * num
+        res *= i ;
+    }
+    return res;
+}
+
+int main(){
+
+    std::cout << fact(5) << std::endl;
+    std::cout << fact(10) << std::endl;
+
+    return 0;
+}
+</xmp></code></pre>

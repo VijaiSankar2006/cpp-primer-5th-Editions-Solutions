@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_13_17.cpp
+ * @brief Exercise 13.17: Write versions of numbered and f corresponding to the previous three exercises and check whether you
+ * correctly predicted the output.
+ * @date 2024-01-23
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+using std::cout; using std::endl;
+
+/*  // version 1 with synthesised copy_constructor
+struct numbered{
+    static size_t count;
+    size_t mysn;
+    numbered() : mysn(++count) {}
+};
+size_t numbered::count = 0;
+
+void f (numbered s) { cout << s.mysn << endl; }
+
+int main(){
+    numbered a, b = a, c = b;
+    f(a); f(b); f(c);
+
+    return 0;
+}    
+
+output :
+    1 
+    1
+    1
+*/
+
+/*  // version 2 : with copy_constructor
+struct numbered{
+    static size_t count;
+    size_t mysn;
+    numbered() : mysn(++count) {}
+    numbered(const numbered &n) : mysn(++count) {}  
+};
+size_t numbered::count = 0;
+
+void f (numbered s) { cout << s.mysn << endl; }
+
+int main(){
+    numbered a, b = a, c = b;
+    f(a); f(b); f(c);
+
+    return 0;
+}
+
+output :
+   4
+   5
+   6
+
+*/
+
+//version 3 : with call by reference 
+struct numbered{
+    static size_t count;
+    size_t mysn;
+    numbered() : mysn(++count) {}
+    numbered(const numbered &n) : mysn(++count) {}  
+};
+size_t numbered::count = 0;
+
+void f (const numbered &s) { cout << s.mysn << endl; }
+
+int main(){
+    numbered a, b = a, c = b;
+    f(a); f(b); f(c);
+
+    return 0;
+}
+
+/*
+output :
+    1
+    2
+    3
+*/
+</xmp></code></pre>

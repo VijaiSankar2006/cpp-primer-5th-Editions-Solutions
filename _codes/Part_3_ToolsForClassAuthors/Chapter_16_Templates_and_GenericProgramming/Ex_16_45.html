@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_45.cpp
+ * @brief Exercise 16.45: Given the following template, explain what happens if we call g on a literal value such as 42.
+ * What if we call g on a variable of type int? 
+ * template <typename T> void g(T&& val) { vector<T> v; }
+ * @date 2024-02-14
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * g(42)  //  T is int, void g(int &&val) {vector<int> v; } is instantiated
+ * g(i)   // illegal : T is int &, void g(int &val) {vector<int &> v; } is instantiated, but we cannot have vector or array of references
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+#include <vector>
+
+template <typename T>
+void g(T &&val) { std::vector<T> v; }
+
+int main() {
+    int i;
+    g(i);   //  call is in error, as we cannot have vector of references
+}
+</xmp></code></pre>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>// Exercise 2.40: Write your own version of the Sales_data class.
+
+#include <iostream>
+
+struct sales_data{
+    std::string book_no;
+    size_t count;
+    double revenue;
+};
+
+int main(){
+    sales_data book1, book2;
+    std::cout << "Enter the transactions of two books : \n";
+    std::cin >> book1.book_no >> book1.revenue >> book1.count;
+    std::cin >> book2.book_no >> book2.revenue >> book2.count;
+
+    std::cout << "List of transactions : \n";
+    std::cout << book1.book_no << " " << book1.revenue << " " << book1.count;
+    std::cout << book2.book_no << " " << book2.revenue << " " << book2.count;
+
+    return 0;
+}
+</xmp></code></pre>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_12_14.cpp
+ * @brief Exercise 12.14: Write your own version of a function that uses a shared_ptr to manage a connection.
+ * @date 2024-01-16
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+#include <memory>
+
+struct Connection;
+struct Destination;
+
+Connection connect(destination *d_param);
+
+void close_connection(Connection *c){
+    disconnect(*c);
+}
+
+int main(){
+    Destination d;
+    Connection new_connect = connect(&d)
+    std::shared_ptr<Connection> *c_ptr(&new_connect, close_connection);
+
+    return 0;
+}
+</xmp></code></pre>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_55.cpp
+ * @brief Exercise 16.55: Explain how the variadic version of print would execute if we declared the nonvariadic version
+ * of print after the definition of the variadic version.
+ * @date 2024-02-17
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * If we declared the non-variadic version after the definition of the variadic version, then our recursive calls to 
+ * print would have instantiated another function instance from variadic version with an empty template parameter pack
+ * and empty function parameter pack which again will call print with empty argument pack which again repeats the 
+ * instantiation from the variadic version with empty template parameter pack, so resulting in to recursive loop.
+ *      To prevent this recursive loop we need a non-varidic print() function declaration before the variadic version
+ * so when a call to print(os, rest...) with an explicit argument to outstream, and an argument pack with only one argument
+ * it expands in to print(os, val) which calls the non-variadic version print(std::ostream &, const T &val) with deduced as
+ * the type of val.
+ * 
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

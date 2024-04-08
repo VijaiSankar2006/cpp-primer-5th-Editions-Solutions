@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_42.cpp
+ * @brief Exercise 16.42: Determine the type of T and of val in each of the following calls:
+ * template <typename T> void g(T&& val);
+ * int i = 0; const int ci = i;
+ * (a) g(i); (b) g(ci); (c) g(i * ci);
+ * @date 2024-02-14
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * template <typename T> void g(T&& val);
+ * int i = 0; const int ci = i;
+ * (a) g(i);        //  is a lvalue, so T will be deduced as int &, so void g(T& && val) == void g(int & val) will be instantiated
+ * (b) g(ci);       //  ci is const lvalue, so T is const int &, void g(const int &val) is instantiated
+ * (c) g(i * ci);   //  operator*() yields an rvalue, so T is int, void g(int &&val) is instantiated.
+ *************************************************************************************************************************************************************/
+
+
+
+</xmp></code></pre>

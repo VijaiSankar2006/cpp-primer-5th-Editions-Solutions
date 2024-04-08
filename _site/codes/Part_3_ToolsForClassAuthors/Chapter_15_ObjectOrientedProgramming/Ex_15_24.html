@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_15_24.cpp
+ * @brief Exercise 15.24: What kinds of classes need a virtual destructor? What operations must a virtual destructor
+ * perform?
+ * @date 2024-02-05
+ * 
+ * @copyright Copyright (c) 2024
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * Base class must need a virtual destructor, so that when we run delete on base class pointer, the destructor of 
+ * the dynamic type be run.
+ *      The virtual destructors can be synthesised by using default, as it mostly doesn't need any aditional work
+ * as its main purpose is to make the destruction based on dynamic type.
+ * 
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/* Exercise 6.42: Give the second parameter of make_plural (§ 6.3.2, p. 224) a default argument of ’s’. Test your program 
+ * by printing singular and plural versions of the words success and failure. */
+
+#include <iostream>
+
+std::string make_plural(size_t ctr, const std::string &word, const std::string &ending = "s")
+{
+    return (ctr > 1) ? word + ending : word;
+}
+
+int main(){
+    std::string str1 = make_plural(2, "success", "es");
+    std::string str2 = make_plural(2,"failure");
+    std::cout << str1 << " " << str2 << std::endl;
+    str1 = make_plural(1,"success");
+    str2 = make_plural(1, "failure");
+    std::cout << str1 << str2 << std::endl;
+
+    return 0;
+}
+
+</xmp></code></pre>

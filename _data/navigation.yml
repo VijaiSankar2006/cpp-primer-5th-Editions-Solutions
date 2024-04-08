@@ -1,10 +1,8 @@
 - name: Home
-  link: /testsite/
+  link: /
 - name: About
-  link: /testsite/about.html
-- name: blog
-  link: /testsite/blog.html
-- name: Staff
-  link: /testsite/staff.html
-  
-  
+  link: /about.html
+- name: Repository
+  link: /repository.html
+- name: Solutions
+  link: /solutions.html

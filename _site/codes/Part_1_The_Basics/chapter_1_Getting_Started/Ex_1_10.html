@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_1_10.cpp
+ * @brief Exercise 1.10: In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--)
+ * that subtracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
+ * @date 2024-03-14
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+
+int main() {
+    int i = 10;
+
+    while (i >= 0) {     //  execute the block until i is lesser than 0
+        std::cout << i << " ";
+        --i;       //  i = i - 1
+    }
+
+    std::cout << std::endl;
+}
+</xmp></code></pre>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_12_24.cpp
+ * @brief Exercise 12.24: Write a program that reads a string from the standard input into a dynamically allocated character 
+ * array. Describe how your program handles varying size inputs. Test your program by giving it a string of data that is longer
+ * than the array size you’ve allocated.
+ * @date 2024-01-18
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+#include <string>
+#include <cstring>
+
+int main(){
+
+    char *chptr = new char[5];
+    std::cout << "Enter the string : " << std::endl;
+    char ch;
+    char *iter = chptr;
+    while(std::cin >> ch){
+        *iter++ = ch;
+    }
+    *iter = '\0';      // null value to mark the end of the string
+    std::cout << std::endl;
+    std::cout << chptr << std::endl;
+}
+
+//   works in g++-12 by writing in out of bounds (ie) beyond the memory allocated and not every time works like the sameN
+</xmp></code></pre>

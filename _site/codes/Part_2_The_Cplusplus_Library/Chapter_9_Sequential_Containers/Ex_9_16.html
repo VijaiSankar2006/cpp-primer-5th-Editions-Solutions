@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_9_16.cpp
+ * @brief Exercise 9.16: Repeat the previous program, but compare elements in a list<int> to a vector<int>
+ * @date 2023-12-29
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+#include <vector>
+#include <list>
+
+int main(){
+    std::vector<int> ivec{1,1,2,3,5,8};
+    std::list<int> ilst{1,2,3,5,7,11};
+
+    // std::cout << "ivec < ilst : " << (ivec < ilst ? "true" : "false") << std::endl;  // didn't work as the types are different
+    // so initialise another container type to the same type
+
+    std::cout << "ivec > ilst : " << (ivec > std::vector<int>(ilst.cbegin(), ilst.cend()) ? "true" : "false") << std::endl;
+
+    return 0;
+
+}
+</xmp></code></pre>

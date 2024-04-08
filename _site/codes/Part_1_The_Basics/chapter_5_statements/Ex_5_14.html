@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/*  Exercise 5.14: Write a program to read strings from standard input looking for duplicated words. The program should
+ *  find places in the input where one word is followed immediately by itself. Keep track of the largest number of times
+ *  a single repetition occurs and which word is repeated. Print the maximum number of duplicates, or else print a message
+ *  saying that no word was repeated. For example, if the input is how now now now brown cow cow the output should indicate
+ *  that the word now occurred three times.*/
+
+#include <iostream>
+#include <string>
+
+int main(){
+    std::string word, currDup, maxDup;
+    size_t currDupCnt = 0, maxDupCnt = 0;
+
+    std::cout << "Enter the sentence : \n";
+    std::cin >> maxDup;
+    std::string prevWord = maxDup;
+    ++maxDupCnt;
+    ++currDupCnt;
+    while(std::cin >> word){
+        if( prevWord == word ){
+            ++currDupCnt;
+        }else{
+            if( maxDupCnt < currDupCnt ){
+                maxDupCnt = currDupCnt;
+                maxDup = prevWord;
+            }
+            prevWord = word;
+            currDupCnt = 1;
+        } 
+
+    }
+
+    std::cout << maxDup << " occurs " << maxDupCnt << std::endl;
+    return 0;
+}
+</xmp></code></pre>

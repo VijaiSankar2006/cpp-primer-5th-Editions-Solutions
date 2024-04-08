@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_13_2.cpp
+ * @brief Exercise 13.2: Explain why the following declaration is illegal:
+ *              Sales_data::Sales_data(Sales_data rhs);
+ * @date 2024-01-22
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * Sales_data::Sales_data(Sales_data rhs);   //  illegal, parameter is not a reference type
+ *      in this case, to call the constructor argument should be copied to the parameter, for that copy constructor should be called
+ * and for that, we need to copy the argument again copy constructor is called, it goes on indifinitely
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

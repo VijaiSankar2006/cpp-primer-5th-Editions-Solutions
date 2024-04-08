@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_10_8.cpp
+ * @brief Exercise 10.8: We said that algorithms do not change the size of the containers over which they operate. Why doesn’t
+ *       the use of back_inserter invalidate this claim?
+ * @date 2024-01-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/**
+ * back_inserter() returns a insert iterator bounded to the container, when we assign to insert iterator, it calls container 
+ * operation to add elements.
+ * as most of the containers can grow in size, when we pass back_inserter to an algorithm, it will change the size of the container
+ * 
+*/
+</xmp></code></pre>

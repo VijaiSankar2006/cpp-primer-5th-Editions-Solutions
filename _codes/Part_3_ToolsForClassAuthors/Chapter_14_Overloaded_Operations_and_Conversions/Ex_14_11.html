@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_14_11.cpp
+ * @brief Exercise 14.11: What, if anything, is wrong with the following Sales_data input operator? What would happen if we 
+ * gave this operator the data in the previous exercise?
+ *      istream& operator>>(istream& in, Sales_data& s){
+ *          double price; 
+ *          in >> s.bookNo >> s.units_sold >> price; 
+ *          s.revenue = s.units_sold * price; 
+ *          return in; 
+ *      }
+ * @date 2024-01-30
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * 0-201-99999-9 10 24.95    //   s.bookNo = 0-201-99999-9    s.units_sold = 10   revenue = 249.5
+ * 10 24.95 0-210-99999-9    //   s.bookNo = 10    s.unit_sold = 24    revenue = 22.8
+ *************************************************************************************************************************************************************/
+
+</xmp></code></pre>

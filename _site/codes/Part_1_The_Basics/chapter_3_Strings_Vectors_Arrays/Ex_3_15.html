@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/*  Exercise 3.15: Repeat the previous program but read strings this time.  */
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main(){
+
+    std::cout << "Enter a list of words : "<< std::endl;
+    std::vector<std::string> svec;
+    std::string word;
+    while( std::cin >> word ){
+        svec.push_back(word);
+    } 
+
+    std::cout << "List of words entered are : \n";
+    for( auto str : svec ){
+        std::cout << str << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+</xmp></code></pre>

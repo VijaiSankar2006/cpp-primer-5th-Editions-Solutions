@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>#include <iostream>
+#include <filesystem>
+#include <fstream>
+#include <set>
+
+namespace fs = std::filesystem;
+
+std::string header = R"(<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav>)"; 
+
+std::set<std::string> include_list{".cpp",".h",".md",".txt"};
+std::set<std::string> conversion_list{".cpp",".h"};
+std::string title(std::string name) {
+    for(size_t i = 0; i != name.size(); ++i) {
+        name[i] == '_' ? ' ' : name[i];
+    }
+    
+    return name;
+}
+
+void Directory(const fs::path &curr, const fs::path &output) {
+    std::string dir_name(curr.stem());
+    fs::create_directory(output.string() + "/" + dir_name);
+    std::cout << "writing contents of " << dir_name << std::endl;
+    for (auto iter = fs::directory_iterator(curr); iter != fs::directory_iterator(); ++iter) {
+        if (fs::is_directory(iter->path())) {
+            Directory(iter->path(), output.string() + "/" + dir_name);
+        } else {
+            if (include_list.find(iter->path().extension()) != include_list.end()) {
+                std::ifstream ifile(iter->path());
+                fs::path ifile_path = iter->path();
+                std::string ofile_name; 
+                if (iter->path().extension().string() != ".md") {
+                    ofile_name = output.string() + "/" + dir_name + "/" + ifile_path.stem().string() + ".html";
+                } else {
+                    ofile_name = output.string() + "/" + dir_name + "/" + ifile_path.stem().string() + ".md";
+                }
+                std::cout << "copying from " << ifile_path << " to " << ofile_name << std::endl;
+                std::ofstream ofile(ofile_name);
+                if (!ofile ) {
+                    std::cout << "unable to open new file" << std::endl;
+                    return ;
+                }
+                std::string line;
+                if (conversion_list.find(iter->path().extension()) != conversion_list.end()) {                   
+                    ofile << header;
+                    ofile << R"(<pre><code class="language-cpp"><xmp>)";
+                    while (std::getline(ifile, line)) {
+                        ofile << line << std::endl;
+                    }
+                    ofile << "</xmp></code></pre>";
+                } else {
+                    while (std::getline(ifile, line)) {
+                        ofile << line;
+                    }
+                }
+                ifile.close();
+                ofile.close();
+            }
+        }
+    }
+}
+
+
+int main() {
+    fs::path curr("/home/vijai/github/c++primer");
+    const fs::path output("/home/vijai/output");
+
+    Directory(curr, output);
+    return 0;
+}
+</xmp></code></pre>

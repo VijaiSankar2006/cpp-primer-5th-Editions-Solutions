@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_9_23.cpp
+ * @brief Exercise 9.23: In the first program in this section on page 346, what would the values of val, val2, val3, and val4
+ *        be if c.size() is 1?
+ * @date 2023-12-29
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ *************************************************************************************************************************************************************/
+
+if (!c.empty()) {
+    auto val = *c.begin(), val2 = c.front();
+    auto last = c.end();
+    auto val3 = *(--last); 
+    auto val4 = c.back(); 
+}
+
+if c.size() is 1, then there is only one element in c.
+    val == val2 == val3 == val4 == c[0]
+</xmp></code></pre>

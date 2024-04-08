@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_15_6.cpp
+ * @brief Exercise 15.6: Test your print_total function from the exercises in § 15.2.1 (p. 595) by passing both
+ * Quote and Bulk_quote objects to that function.
+ * @date 2024-02-03
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include "Ex_15_5_BulkQuote.cpp"
+
+int main(){
+    Bulk_quote bq1("c++ primer", 45, 0.2, 200);
+    Quote q1("discrete maths", 77);
+    print_total(q1, 100);
+    print_total(bq1, 200);
+    print_total(bq1, 199);
+
+    return 0;
+}
+</xmp></code></pre>

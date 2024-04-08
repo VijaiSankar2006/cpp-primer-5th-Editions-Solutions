@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_40.cpp
+ * @brief Exercise 16.40: Is the following function legal? If not, why not? If it is legal, what, if any, are the 
+ * restrictions on the argument type(s) that can be passed, and what is the return type?
+ * template <typename It>
+ * auto fcn3(It beg, It end) -> decltype(*beg + 0)
+ * {
+ *      // process the range
+ *      return *beg; // return a copy of an element from the range
+ * }
+ * @date 2024-02-14
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * template <typename It>
+ * auto fcn3(It beg, It end) -> decltype(*beg + 0)  //  legal : dereferencing iter or pointer returns lvalue, to convert the return type from lvalue reference to rvalue 
+ * {                                                //          we are adding 0 to it, as operator+ returns an rvalue. But it imposes a restriction that the type returned 
+ *      // process the range                        //          by dereferencing should have operator+ overloaded which should take an right operand, to which int is convertible.
+ *      return *beg;                                //          Orelse the call is in error.
+ * }                                                //          if *beg is string, string + 0 is error                     
+ * 
+ *************************************************************************************************************************************************************/
+#include <iostream>
+#include <vector>
+
+
+template <typename It>
+auto fcn3(It beg, It end) -> decltype(*beg + 0)  //  error : no operator+ for string and int
+{
+    // process the range
+    return *beg; // return a copy of an element from the range
+}
+
+int main() {
+    std::vector<std::string> ivec{"m","n"};
+    std::cout << fcn3(ivec.begin(), ivec.end()) << std::endl;    //  error 
+}
+</xmp></code></pre>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_23.cpp
+ * @brief Exercise 16.23: Predict when the call operator will be executed in your main query program. If your expectations
+ * and what happens differ, be sure you understand why.
+ * @date 2024-02-12
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * At end of the main function our TextQuery object gets deleted which calls the destructor of shared_ptr for both file_vector
+ * and word_map, which executes the call operator of our DebugDelete which in-turn deletes the pointer.
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

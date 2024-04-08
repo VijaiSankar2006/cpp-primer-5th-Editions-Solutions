@@ -1,1 +1,1 @@
-Sitemap: https://cpp-primer-5th-edition-solutions.github.io/testsite/sitemap.xml
+Sitemap: /sitemap.xml

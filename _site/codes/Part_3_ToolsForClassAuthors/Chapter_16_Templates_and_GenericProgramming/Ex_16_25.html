@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_25.cpp
+ * @brief Exercise 16.25: Explain the meaning of these declarations:
+ * extern template class vector<string>; 
+ * template class vector<Sales_data>;
+ * @date 2024-02-13
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/***********************************************************************************************************************************************************
+ *  extern template class vector<string>;  //  instantiation declaration, which promises the compiler that somewhere else
+ * a non-extern usage of the instantiation will be present so compiler won't generate code for instantiation in this file.This
+ * is done to avoid multiple instantiations of same type or same function type in the program.
+ * 
+ * template class vector<Sales_data>;    //  explicit instantiation definition, when compiler sees this, it generates or 
+ * instantiates the class with all the all the members, as the compiler have no idea what members will be used.
+ * 
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

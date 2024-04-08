@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_15_17.cpp
+ * @brief Exercise 15.17: Try to define an object of type Disc_quote and see what errors you get from the compiler.
+ * @date 2024-02-03
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include "Ex_15_15_DiscQuote.cpp"
+
+int main(){
+    Disc_quote dq1("c++ primer", 56, 0.3, 100);
+
+    // error: cannot declare variable ‘dq1’ to be of abstract type ‘Disc_quote’
+   //    Disc_quote dq1("c++ primer", 56, 0.3, 100);
+}
+</xmp></code></pre>

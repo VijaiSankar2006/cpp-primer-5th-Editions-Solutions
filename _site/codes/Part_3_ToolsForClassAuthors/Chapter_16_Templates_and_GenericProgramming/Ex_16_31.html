@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_31.cpp
+ * @brief Exercise 16.31: Explain how the compiler might inline the call to the deleter if we used DebugDelete with
+ * unique_ptr.
+ * @date 2024-02-13
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * since a custom deleter is part of the unique_ptr type. we have to pass the type of the callable object as the template 
+ * parameter along with the type of the object to create a unique_ptr. 
+ *      Then we have to pass the callable object to the constructor of the unique_ptr. When unique_ptr is destroyed
+ * it executes the call operator on the callable object we passed which in return deletes the pointer. 
+ * 
+ *************************************************************************************************************************************************************/
+</xmp></code></pre>

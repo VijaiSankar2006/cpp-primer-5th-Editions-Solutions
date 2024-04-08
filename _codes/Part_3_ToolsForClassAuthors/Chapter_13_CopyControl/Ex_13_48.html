@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_13_48.cpp
+ * @brief Exercise 13.48: Define a vector<String> and call push_back several times on that vector. Run your program and see
+ * how often Strings are copied.
+ * @date 2024-01-27
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include "Ex_13_44_String.cpp"
+#include <iostream>
+#include <vector>
+
+int main(){
+   std::vector<String> svec;
+   svec.push_back("1");
+   std::cout << "=============" << std::endl;
+   svec.push_back("2");
+std::cout << "=============" << std::endl;
+   svec.push_back("3");
+std::cout << "=============" << std::endl;
+   svec.push_back("4");
+std::cout << "=============" << std::endl;
+   svec.push_back("5");
+std::cout << "=============" << std::endl;
+   svec.push_back("6");
+std::cout << "=============" << std::endl;
+   svec.push_back("7");
+std::cout << "=============" << std::endl;
+
+   svec.push_back("8");
+std::cout << "=============" << std::endl;
+   svec.push_back("9");
+std::cout << "=============" << std::endl;
+
+}
+</xmp></code></pre>

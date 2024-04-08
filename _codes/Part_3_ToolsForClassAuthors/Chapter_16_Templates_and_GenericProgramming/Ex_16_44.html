@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_16_44.cpp
+ * @brief Exercise 16.44: Using the same three calls as in the first exercise, determine the types for T if g’s 
+ * function parameter is declared as T (not T&&). What if g’s function parameter is const T&?
+ * @date 2024-02-14
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+/************************************************************************************************************************************************************
+ * 1) template <typename T> void g(T val) {} 
+ * (a) g(i);       //  T is int
+ * (b) g(ci);      //  T is int, top level const is ignored
+ * (c) g(i * ci);  //  T is int 
+ * 
+ * 2) template <typename T> void g(const T &) {}
+ * (a) g(i);       //  T is int
+ * (b) g(ci);      //  T is int  
+ * (c) g(i * ci);  //  T is int, rvalue can be passed to const lvalue reference
+ * 
+ *************************************************************************************************************************************************************/
+
+</xmp></code></pre>

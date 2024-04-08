@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_14_35.cpp
+ * @brief Exercise 14.35: Write a class like PrintString that reads a line of input from an istream and returns a string
+ * representing what was read. If the read fails, return the empty string.
+ * @date 2024-01-31
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+#include <string>
+
+class PrintString{
+    public :
+        PrintString(std::istream &istrm = std::cin) : is(istrm) {}
+        std::string operator()(){
+            if(getline(is, str))
+                return str;
+            else    
+                return std::string();
+        }
+
+    private :
+        std::istream &is;
+        std::string str;
+};
+</xmp></code></pre>

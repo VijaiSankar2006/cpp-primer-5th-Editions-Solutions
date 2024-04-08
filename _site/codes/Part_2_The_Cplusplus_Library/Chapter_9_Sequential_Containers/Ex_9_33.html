@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_9_33.cpp
+ * @brief Exercise 9.33: In the final example in this section what would happen if we did not assign the result of insert to
+ *        begin? Write a program that omits this assignment to see if your expectation was correct.
+ * @date 2023-12-31
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+#include <vector>
+
+int main(){
+    std::vector<int> v{1,2,3,4,5,6,7,8,9,10};
+    auto begin = v.begin();
+
+    while(begin != v.end()) {
+        std::cout << *begin << std::endl;
+        ++begin; 
+        v.insert(begin, 42);                //  invalidates iterators after the insertion point, so the code is undefined
+        ++begin; 
+    }
+
+    return 0;
+}    
+
+</xmp></code></pre>

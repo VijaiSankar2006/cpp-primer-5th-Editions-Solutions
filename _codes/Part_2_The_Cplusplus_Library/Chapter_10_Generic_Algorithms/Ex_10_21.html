@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/************************************************************************************************************************************************************
+ * @file Ex_10_21.cpp
+ * @brief Exercise 10.21: Write a lambda that captures a local int variable and decrements that variable until it reaches 0. 
+ *        Once the variable is 0 additional calls should no longer decrement the variable. The lambda should return a bool that
+ *        indicates whether the captured variable is 0.
+ * @date 2024-01-05
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ *************************************************************************************************************************************************************/
+
+#include <iostream>
+
+int main(){
+    int n = 10;
+
+    // on declaring lamda mutable, we can change the 'captured' value inside, but it doen't affect the variable outside
+    auto f = [n]()mutable { if(n-- == 0) return true ; else return false;};
+
+    while(f() == false);
+
+    std::cout << "out of while \n" 
+                "n = " << n << std::endl;
+    
+    return 0;
+}
+</xmp></code></pre>

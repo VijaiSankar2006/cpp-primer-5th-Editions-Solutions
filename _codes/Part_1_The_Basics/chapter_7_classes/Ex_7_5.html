@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+      <!--  <link href="/assets/css/styles.css" type="text/css" rel="stylesheet">-->
+      <link href="/assets/css/styles/github-dark-dimmed.css" type="text/css" rel="stylesheet">
+      <script src="/assets/js/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <nav>
+    <ul>
+        
+        <li><a href="/" >Home</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
+        
+        <li><a href="/repository.html" >Repository</a></li>
+        
+        <li><a href="/solutions.html" >Solutions</a></li>
+        
+    </ul>
+</nav><pre><code class="language-cpp"><xmp>/*  Exercise 7.5: Provide operations in your Person class to return the name and address. Should these functions be const?
+ *  Explain your choice */
+
+#include <iostream>
+#include <string>
+
+struct Person{
+    std::string get_name() const;
+    std::string get_address() const;
+    std::string name;
+    std::string address;
+};  
+/*  as get_name() and get_address doesn't need write access to the object, these functions are declared as const member
+ *  functions */
+
+std::string Person::get_name() const {
+    return name;
+}
+
+std::string Person::get_address() const {
+    return address;
+}
+
+</xmp></code></pre>

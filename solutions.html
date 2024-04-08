@@ -1,0 +1,22 @@
+---
+layout: default
+title: Solutions
+---
+<h1>List of exercises</h1>
+<hr>
+<p>Output starts here</p>
+
+{% for item in site.codes %}
+  {% if item.extname == '.md' %}
+    <h1><a href="{{ item.url }}">{{ item.name }}</a></h1>
+    <div>{{ item.content }}</div>
+    <hr>
+  {% elsif item.extname == '.html' %}
+    <h1><a href="{{ item.url }}">{{ item.name }}</a></h1>
+    <!-- Handle HTML file -->
+  {% else %}
+    <h1><a href="{{ item.url }}">{{ item.name }}</a></h1>
+    <!-- Handle other file types if needed -->
+  {% endif %}
+{% endfor %}
+ 
