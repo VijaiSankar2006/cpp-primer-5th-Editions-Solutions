@@ -1,0 +1,11 @@
+home : cpp-primer-5th-Editions-Solutions/
+everylink starts with : cpp-primer-5th-Editions-Solutions/
+
+title:   
+<meta property="og:title" content="<title>" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="<title>" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Repository","url":"/<title>.html"}</script>
