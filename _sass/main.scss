@@ -1,5 +1,179 @@
 .current {
-    background-image:-webkit-linear-gradient(#00ebf3, #009297);
-    color:black;
+    color:rgb(121, 0, 0);
     font-weight: bold;
 }
+
+
+body {
+    background-color: rgb(44,44,50);
+    margin: 0px;
+  }
+  header {
+    background-color: #16747a;;
+    float : left;
+    display: block;
+    width:100%;
+  }
+  
+  #hometitle {
+    display: block;
+    margin-bottom: 1em;
+  }
+  #hometitle1 {
+    margin: 0em;
+    font-size: 2.4em;
+    padding-top: 0.7em;
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  }
+  
+  #hometitle2 {
+    margin-left: 1em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    font-stretch: ultra-expanded;
+  }
+  
+  #cpplogo {
+    margin: 0.4em;
+    height: 10%;
+    width: 10%;
+    float: left;
+  }
+  
+  nav.navbar {
+    background-color: black; /* Background color */
+    color:rgb(197, 197, 197); /* Text color */
+     /* Margin space below the navigation */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  nav.navbar ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    margin-left:12em;
+  }
+  
+  nav.navbar ul li {
+    display: inline-block; /* Display list items inline */ /* Space between list items */
+    width : 6em;
+    padding:4px;
+    padding-left:1.4em;
+    font-stretch: extra-expanded;
+  }
+  
+  nav.navbar ul li a {
+    color: #e5e2e2; /* Text color for links */
+    text-decoration: none; /* Remove default underline */
+    font-size: 1.9em;
+    font-stretch: expanded;
+    display :inline-block;
+    
+  }
+  
+  nav.navbar ul li:hover {
+    color:rgb(121, 0, 0);
+    border-radius: 3px;
+  }
+  
+  nav.navbar ul li a:hover {
+    color:rgb(141, 0, 0);
+  }
+  footer {
+    background-color: darkslategrey;
+    display:block;
+  }
+  
+  aside {
+    background-color: rgb(44,44,50);
+    float:left;
+    width: 19%;
+    height:85.5%;
+    overflow: auto;
+    border:2px solid black;
+    box-shadow: 2px 2px 2px black;
+    max-height: 100%;
+    border-left:1em solid rgb(1, 97, 81);
+  }
+  
+  aside li {
+    text-decoration: none;
+  }
+  
+  aside li:hover {
+    color:rgb(141, 0, 0);
+  }
+  
+  
+  aside ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  aside ul li a:link {
+    color:rgb(212, 211, 211);
+    text-decoration: none;
+  }
+  
+  main {
+    margin:0px;
+    height:80em;
+    width:100%;
+  }
+  
+  h4 {
+    float:left;
+    color:black;
+    padding:1px;
+    padding-left: 10px;
+    width:78%;
+    margin:0;
+    font-size:2em;
+    background-color:darkgray;
+  }
+  
+  .code-container {
+    float:left;
+    max-width: 78%;
+    max-height: 81%; /* Set maximum height */
+    overflow: auto; /* Add scrollbar when content exceeds container height */
+     /* Optional: Add border for clarity */
+  }
+  
+  pre {
+    margin:0px;
+  }
+  
+  footer {
+    background-color: #25d1f0;;
+  }
+  
+  .footer {
+    margin:20px;
+    margin-left: 0px;
+    padding-left:0;
+    background-color: #16747a;
+    width:100%
+  }
+  
+  nav.footer ul {
+    margin:0;
+    list-style-type:none;
+    padding:0;
+  
+  }
+  nav.footer ul li{
+    display: inline; /* Display list items inline */ /* Space between list items */
+    font-stretch: extra-expanded;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    margin:0.5em;
+  }
+  
+  nav.footer ul li a:link {
+    color : black;
+  
+    text-decoration: none;
+  }
