@@ -3,7 +3,6 @@
 <main>
     <aside>
       <ul>
-        <li><a href="codes/solutions.html">solutions.html</a></li>
         <li>
           <details>
             <summary><a href="codes/DBMS">DBMS</a></summary>
@@ -2031,9 +2030,9 @@
 <<div class="code-container">![Alt text](pictures/Table_4_12_Operator_Precedence.png) ![Alt text](pictures/Table_4_12_2_OperatorPrecedence.png) ![Alt text](pictures/Table_4_12_3_OperatorPrecedence.png) ![Alt text](pictures/Table_4_12_4_OperatorPrecedence.png)</div></main><footer> 
     <nav class="footer">
         <ul>
-            <li><a href="LICENSE.txt">LICENSE</a></li>
-            <li><a href="copy_rights.txt">copy_rights</a></li>
-            <li><a href="myresume.pdf">myresume.pdf</a></li>
+            <li><a href="/LICENSE.txt">LICENSE</a></li>
+            <li><a href="/copy_rights.txt">copy_rights</a></li>
+            <li><a href="/myresume.pdf">myresume.pdf</a></li>
         </ul>
     </nav>
 

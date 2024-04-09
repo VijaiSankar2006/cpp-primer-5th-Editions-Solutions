@@ -177,3 +177,7 @@ body {
   
     text-decoration: none;
   }
+
+  pre > code {
+    font-family: "Monaco", "Consolas", "Ubuntu Mono", "Courier New", monospace;
+  }

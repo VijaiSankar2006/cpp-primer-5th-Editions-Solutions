@@ -177,6 +177,10 @@ nav.footer ul li a:link {
   text-decoration: none;
 }
 
+pre > code {
+  font-family: "Monaco", "Consolas", "Ubuntu Mono", "Courier New", monospace;
+}
+
 .highlight table td {
   padding: 5px;
 }
