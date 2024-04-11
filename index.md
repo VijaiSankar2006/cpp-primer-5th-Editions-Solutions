@@ -2037,13 +2037,16 @@
         Find solutions to exercises and valuable resources for your C++ journey. Dive in confidently and navigate through
         the index or directory to enhance your understanding. Discover, learn, and excel in C++ with ease.
 
-    </xmp></code></pre></div></div><footer> 
+    </xmp></code></pre>
+    </div>
+    </div>
+    <footer> 
             <a href="/cpp-primer-5th-edition-solutions/LICENSE.txt" id="license" class="non-image">license</a>
             <a href="/cpp-primer-5th-edition-solutions/myresume.pdf" id="myresume" class="non-image">myresume.pdf</a>    
             <a href="https://www.linkedin.com/in/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
           <a href="https://github.com/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
           <a href = "mailto:missingsemicolon.vijai@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-        </footer>
+    </footer>
     </body>
     
     </html></body></html>
