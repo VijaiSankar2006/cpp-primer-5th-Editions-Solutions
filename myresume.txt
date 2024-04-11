@@ -35,7 +35,7 @@ Highlights :
 
 ## SKILLS
 
-* C++ 17    * C    * OOPS    * Github    * SQL     * jekyll    * liquid
+* C++ 17    * C    * OOPS    * Github    * SQL     * jekyll    * liquid    * HTML5   * CSS3 
      
 
 ## EXPERIENCE
