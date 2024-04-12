@@ -1,5 +1,229 @@
 <!DOCTYPE html><html><head><title>readme</title>
-<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.md"}</script>
+<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.html"}</script>
+<style type="text/css">
+* {
+    margin:0px;
+    padding:0px;
+    font-family:Garamond;
+}
+
+a:hover {
+    color:rgb(241, 177, 55);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height :5%;
+}
+html {
+   height: 100%;
+   width: 100%; 
+}
+body {
+    height: 100%;
+    width:100%;
+}
+
+main {
+    height:96%;
+    width:100%;
+    display:flex;
+    background-color: rgb(124, 124, 124);
+}
+header {
+    height:100%;
+    width:20%;
+    background-image: -webkit-linear-gradient(rgb(29, 25, 25),rgb(0, 0, 0) );
+}
+
+aside {
+    padding-top:30%;
+    height:80%;
+    width:100%;
+    overflow:auto;
+    color:rgb(209, 209, 209);
+}
+
+
+aside ul {
+    height: fit-content;
+    width:100%;
+    border:0px;
+}
+
+aside h1 {
+    border-bottom: 1px solid  rgb(52, 48, 48);
+    padding-left:60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: expanded;
+}
+aside li {
+    border:0px;
+    height:100%;
+    width:100%;
+    padding-left:10px;
+    border-bottom: 1px solid  rgb(52, 48, 48);
+}
+
+aside li details ul li a{
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    border:0px;
+    color:rgb(209, 209, 209);
+    padding-left: 10px;
+    font-size:1em;
+}
+
+aside li a {
+    border:0px;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(209, 209, 209);
+    padding-left:10px;
+    font-size:1em;
+}
+
+aside details {
+    border:0px;
+}
+aside summary {
+    border:0px;
+    display:flex;
+    width:100%;
+    height: 100%;
+    color:rgb(209, 209, 209);
+    font-size:1em;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+
+aside summary:hover {
+    color:rgb(241, 177, 55);
+}
+
+aside h1 {
+    color:rgb(241, 177, 55);
+}
+#content {
+    width:80%;
+    height:98%;
+    border:0px;
+}
+
+div > nav {
+    border:0px;
+    height:9%;
+    width:100%;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin-left:5px;
+    background:rgb(250, 250, 250);;
+}
+
+div > nav ul {
+    height: 100%;
+    width:50%;
+    list-style-type: none;
+    display: flex;
+}
+
+div > nav ul li {
+    height:100%;
+    width:100%;
+}
+
+div > nav ul li a {
+    height: 80%;
+    width:100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color:rgb(44, 44, 44);
+    padding-top:12px;
+}
+
+#code-container {
+    height:90%;
+    width:98%;
+    overflow: auto;
+    border: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    overflow-x:scroll; 
+    margin-left:5px;
+    color:rgb(85, 85, 85);
+}
+
+pre {
+    display:inline;
+    margin-top:0px;
+    padding: 0px;
+}
+pre > code {
+    display: inline-block;
+    margin-top: 0px;
+    padding:0px;
+}
+xmp {
+    display:flex;
+    margin-top:0px;
+    padding:0px;
+}
+footer {
+    box-shadow: 0px 1px 5px rgb(48, 48, 48);
+    background-color: rgb(124, 124, 124);
+    display:flex;
+    padding-top:5px;
+    height: 4%;
+   width:100%;
+}
+
+footer a.non-image {
+    width:20%;
+    display: inline-block;
+    background-color:rgb(0, 119, 181);
+    margin-right:2px;
+    margin-bottom:4px;
+    height: 100%;
+    padding-top:3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    color:rgb(255, 255, 255)
+}
+
+
+footer a.non-image:hover {
+    color:rgb(241, 177, 55)
+}
+
+footer a {
+    display: inline-block;
+    height: 100%;
+    margin-left:4px;
+}
+#myresume {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="/home/vijai/github/cpp-primer-5th-Editions-Solutions/favicon.ico">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
 <main><header>
             <aside><h1>Index</h1><ul><li><details><summary>DBMS</summary>
 <ul><li><a href = "./codes/DBMS/Database.html">Database.html</a></li><li><a href = "./codes/DBMS/Query.html">Query.html</a></li><li><a href = "./codes/DBMS/Table.html">Table.html</a></li><li><a href = "./codes/DBMS/employees.html">employees.html</a></li><li><a href = "./codes/DBMS/file.html">file.html</a></li><li><a href = "./codes/DBMS/readme.md">readme.md</a></li></details></li><li><details><summary>OtherWorks</summary>
@@ -35,13 +259,71 @@
                                     <li><a href="/cpp-primer-5th-Editions-Solutions/myresume.html">resume</a></li>
                                 </ul>
                           </nav>
-<<div class="code-container"><details><summary><h1 style = "text-align:center; color:blue">DBMS</h1></summary><pre><a href = "/DBMS/Database.cpp">Database.cpp</a>        <a href = "/DBMS/Query.cpp">Query.cpp</a>           <a href = "/DBMS/Query.h">Query.h</a>             <a href = "/DBMS/Table.cpp">Table.cpp</a>           <a href = "/DBMS/Table.h">Table.h</a>             <a href = "/DBMS/employees.txt">employees.txt</a>       <a href = "/DBMS/file.txt">file.txt</a>            <a href = "/DBMS/readme.md">readme.md</a>           <a href = "/DBMS/tempreadme.md">tempreadme.md</a></pre>         A simple dbms which accepts SQL to1. Create table     CREATE table table_name2. Save table to file3. Get **data type** of the information from the user at run time.    * int    * double    * char    * string    all the above types are supported         List of SQL Operations supported1. SELECT : user can select which fields of information from the table to be displayed            ` SELECT *` // * implies all coloumns.    * SELECT col1, col22. FROM : It handles the table from which information needs to be provided    * FROM table_name3. WHERE : It helps to filter specific records from the table    * **relational operators supported**    * = equal to, returns records with the value equal to provided    * != not equal to, returns records with the value not equal to provide    * < lesser than, returns records with the value lesser than provided     * \> greater than, returns records with the value greater than provided       * <= lesser than, returns records with the value lesser than or equal to provided    * \>= greater than, returns records with the value greater than or equal to provided    * **logical operators supported**    * AND, returns the records which satisfies both the constraints     * OR, returns the records which satisfies either or the other constraints    * NOT, returns the records which didn't satisfy the constraint    all the above operators and operations are supported.    * WHERE col1 \<relational operator> val    * WHERE \<logical operator> col1 \<relational operator> col2           `WHERE NOT age >= 45 AND gender = f OR city = chennai`4. ORDER_BY : sorts the list in ascending order by default.    * DESC, sorts the list in descending order            ` ORDER_BY emp_id`              `ORDER_BY emp_id DESC `             ```SQL    ex :         SELECT *         FROM employees        WHERE join_yr < 2012 AND NOT gender = f OR city = chennai        ORDER_BY emp_id DESC    ```5. HELP :    * HELP ALL : lists all suported commands   * HELP <command> : displays information about the specified command     6. OPEN : OPEN <file_name> , loads Table from the file.   7. ADD : adds records to the Table.8. DELETE : delets a record from the Table     </details>       </div></div></main><footer> 
+<div id="code-container"><pre><code class="language-cpp"><xmp>
+<details><summary><h1 style = "text-align:center; color:blue">DBMS</h1></summary><pre><a href = "/DBMS/Database.cpp">Database.cpp</a>        <a href = "/DBMS/Query.cpp">Query.cpp</a>           <a href = "/DBMS/Query.h">Query.h</a>             <a href = "/DBMS/Table.cpp">Table.cpp</a>           <a href = "/DBMS/Table.h">Table.h</a>             
+<a href = "/DBMS/employees.txt">employees.txt</a>       <a href = "/DBMS/file.txt">file.txt</a>            <a href = "/DBMS/readme.md">readme.md</a>           <a href = "/DBMS/tempreadme.md">tempreadme.md</a></pre>         
+
+A simple dbms which accepts SQL to
+1. Create table 
+    CREATE table table_name
+2. Save table to file
+3. Get **data type** of the information from the user at run time.
+    * int
+    * double
+    * char
+    * string
+    all the above types are supported         
+List of SQL Operations supported
+1. SELECT : user can select which fields of information from the table to be displayed        
+    ` SELECT *` // * implies all coloumns.
+    * SELECT col1, col2
+2. FROM : It handles the table from which information needs to be provided
+    * FROM table_name
+3. WHERE : It helps to filter specific records from the table
+    * **relational operators supported**
+    * = equal to, returns records with the value equal to provided
+    * != not equal to, returns records with the value not equal to provide
+    * < lesser than, returns records with the value lesser than provided 
+    * \> greater than, returns records with the value greater than provided   
+    * <= lesser than, returns records with the value lesser than or equal to provided
+    * \>= greater than, returns records with the value greater than or equal to provided
+    * **logical operators supported**
+    * AND, returns the records which satisfies both the constraints 
+    * OR, returns the records which satisfies either or the other constraints
+    * NOT, returns the records which didn't satisfy the constraint
+    all the above operators and operations are supported.
+    * WHERE col1 \<relational operator> val
+    * WHERE \<logical operator> col1 \<relational operator> col2       
+    `WHERE NOT age >= 45 AND gender = f OR city = chennai`
+4. ORDER_BY : sorts the list in ascending order by default.
+    * DESC, sorts the list in descending order        
+    ` ORDER_BY emp_id`         
+     `ORDER_BY emp_id DESC ` 
+        
+    ```SQL
+    ex : 
+        SELECT * 
+        FROM employees
+        WHERE join_yr < 2012 AND NOT gender = f OR city = chennai
+        ORDER_BY emp_id DESC
+    ```
+5. HELP : 
+   * HELP ALL : lists all suported commands
+   * HELP <command> : displays information about the specified command     
+6. OPEN : OPEN <file_name> , loads Table from the file.   
+7. ADD : adds records to the Table.
+8. DELETE : delets a record from the Table     
+
+</details>       
+
+
+
+</xmp></code></pre></div></div></main><footer> 
         <a href="/cpp-primer-5th-edition-solutions/LICENSE.txt" id="license" class="non-image">license</a>
         <a href="/cpp-primer-5th-edition-solutions/myresume.pdf" id="myresume" class="non-image">myresume.pdf</a>    
-        <a href="https://www.linkedin.com/in/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-      <a href="https://github.com/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+        <a href="www.linkedin.com/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <a href="https://github.com/VijaiSankar2006/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
       <a href = "mailto:missingsemicolon.vijai@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
     </footer>
 </body>
-
 </html></body></html>

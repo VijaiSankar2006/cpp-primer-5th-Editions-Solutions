@@ -1,5 +1,229 @@
 <!DOCTYPE html><html><head><title>readme</title>
-<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.md"}</script>
+<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.html"}</script>
+<style type="text/css">
+* {
+    margin:0px;
+    padding:0px;
+    font-family:Garamond;
+}
+
+a:hover {
+    color:rgb(241, 177, 55);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height :5%;
+}
+html {
+   height: 100%;
+   width: 100%; 
+}
+body {
+    height: 100%;
+    width:100%;
+}
+
+main {
+    height:96%;
+    width:100%;
+    display:flex;
+    background-color: rgb(124, 124, 124);
+}
+header {
+    height:100%;
+    width:20%;
+    background-image: -webkit-linear-gradient(rgb(29, 25, 25),rgb(0, 0, 0) );
+}
+
+aside {
+    padding-top:30%;
+    height:80%;
+    width:100%;
+    overflow:auto;
+    color:rgb(209, 209, 209);
+}
+
+
+aside ul {
+    height: fit-content;
+    width:100%;
+    border:0px;
+}
+
+aside h1 {
+    border-bottom: 1px solid  rgb(52, 48, 48);
+    padding-left:60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: expanded;
+}
+aside li {
+    border:0px;
+    height:100%;
+    width:100%;
+    padding-left:10px;
+    border-bottom: 1px solid  rgb(52, 48, 48);
+}
+
+aside li details ul li a{
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    border:0px;
+    color:rgb(209, 209, 209);
+    padding-left: 10px;
+    font-size:1em;
+}
+
+aside li a {
+    border:0px;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(209, 209, 209);
+    padding-left:10px;
+    font-size:1em;
+}
+
+aside details {
+    border:0px;
+}
+aside summary {
+    border:0px;
+    display:flex;
+    width:100%;
+    height: 100%;
+    color:rgb(209, 209, 209);
+    font-size:1em;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+
+aside summary:hover {
+    color:rgb(241, 177, 55);
+}
+
+aside h1 {
+    color:rgb(241, 177, 55);
+}
+#content {
+    width:80%;
+    height:98%;
+    border:0px;
+}
+
+div > nav {
+    border:0px;
+    height:9%;
+    width:100%;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin-left:5px;
+    background:rgb(250, 250, 250);;
+}
+
+div > nav ul {
+    height: 100%;
+    width:50%;
+    list-style-type: none;
+    display: flex;
+}
+
+div > nav ul li {
+    height:100%;
+    width:100%;
+}
+
+div > nav ul li a {
+    height: 80%;
+    width:100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color:rgb(44, 44, 44);
+    padding-top:12px;
+}
+
+#code-container {
+    height:90%;
+    width:98%;
+    overflow: auto;
+    border: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    overflow-x:scroll; 
+    margin-left:5px;
+    color:rgb(85, 85, 85);
+}
+
+pre {
+    display:inline;
+    margin-top:0px;
+    padding: 0px;
+}
+pre > code {
+    display: inline-block;
+    margin-top: 0px;
+    padding:0px;
+}
+xmp {
+    display:flex;
+    margin-top:0px;
+    padding:0px;
+}
+footer {
+    box-shadow: 0px 1px 5px rgb(48, 48, 48);
+    background-color: rgb(124, 124, 124);
+    display:flex;
+    padding-top:5px;
+    height: 4%;
+   width:100%;
+}
+
+footer a.non-image {
+    width:20%;
+    display: inline-block;
+    background-color:rgb(0, 119, 181);
+    margin-right:2px;
+    margin-bottom:4px;
+    height: 100%;
+    padding-top:3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    color:rgb(255, 255, 255)
+}
+
+
+footer a.non-image:hover {
+    color:rgb(241, 177, 55)
+}
+
+footer a {
+    display: inline-block;
+    height: 100%;
+    margin-left:4px;
+}
+#myresume {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="/home/vijai/github/cpp-primer-5th-Editions-Solutions/favicon.ico">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
 <main><header>
             <aside><h1>Index</h1><ul><li><details><summary>DBMS</summary>
 <ul><li><a href = "./codes/DBMS/Database.html">Database.html</a></li><li><a href = "./codes/DBMS/Query.html">Query.html</a></li><li><a href = "./codes/DBMS/Table.html">Table.html</a></li><li><a href = "./codes/DBMS/employees.html">employees.html</a></li><li><a href = "./codes/DBMS/file.html">file.html</a></li><li><a href = "./codes/DBMS/readme.md">readme.md</a></li></details></li><li><details><summary>OtherWorks</summary>
@@ -35,13 +259,85 @@
                                     <li><a href="/cpp-primer-5th-Editions-Solutions/myresume.html">resume</a></li>
                                 </ul>
                           </nav>
-<<div class="code-container"># <p style="text-align:center">ASSOCIATIVE CONTAINERS</p>    Associative containers stores the elements based on the values of keys, ordered types stores their elements in order by comparing the keys using '<' operator defined by key type. Unordered types uses hashes for the keys to store the elements in buckets for faster average access time. There are totaly eight types1. map  2. set3. multi_map4. multi_set5. unordered map6. unordered set7. unordered multi_map8. unordered multi_set## map and set contains unique keys## map : stores elements of pair type, std::map<T1, T2>  : T1 maps to T2, key = T1,  value = T2- elements are key-value pairs - keys are compared using '<' operator, so key type should have defined '<' operator or we should provide comparison function to compare the keys.    * if a key is lesser than the other, then 2nd key should not be lesser than 1st    * if two keys are not lesser than each other, then they are considered equal    * if 1st key is lesser than the 2nd and if 2nd is lesser than the 3rd, then 1st is lesser than 3rd    * if 1st key is equal to 2nd and 2nd is equal to 3rd, then 1st is equal to 3rd- [] operator supported, keys are the index in to the map, when keys are subscripted, [] operator returns the value associated with the key of the element for which the key matches, or else a new element is constructed with key and value part value initialised and inserted in to the map and then returns value part - as keys acts as index in to the map, they are const by default, we can only change the value associated with it.- iterators points to the element in the map, which is a pair type, so on dereferencing returns a pair type consisting of const key and value of the element    ex:- std::map<T1, T2> m;        auto iter = m.begin();        std::pair<const T1, T2> p = *iter;## set : key is the element's value, std::set<T> - elements are not pairs, key is the element's value- elements are stored in the same way as maps- since the elements are ordered, finding a key in a set is quick operation compared to other containers## Adding elements- insert memeber inserts elements in to the containers- set : insert takes an argument of key type,     * if the key is present it does nothing    * key is added otherwise- map : insert takes an argument of pair type which should match with the pair type of the element in the map    * [key] returns the reference to the value associated with key, which can be used to change the value part, is key is not present, a new element is constructed with key as key_part and value value-initialised, returns the reference to the value    * return a pair type consisting of iter, and a bool indicating result of insertion    * if key is present, iter points to the element whose key matches with the key passed and bool type will be false to indicated insertion didn't happen as key is already present    * if key is not present, a new element is constructed with key and value intialised with value-initialisation and inserted. iter will point to the new element and bool will be true indicating success## multimap and multiset- keys can be repeated- no [] operator, as there may be many keys with same value- keys with same value are stored adjusent to each other, their order will be based on the insertion order- insert member always inserts the key even if key and value are same # PAIR type : std::pair<T1, T2>- pair type is a library type which has two public members named first and second, both need not be the same type    * pairObj.first = first member    * pairObj.second = second member- construction    * {T1,T2} : brace initialisation    * std::make_pair(T1,T2) : returns a pair_type containing T1 as first and T2 as second    * std::pair<T1,T2>(t1,t2) : t1, t2 are objects of T1, T2 type respectively## unordered maps and unordered sets- elements are unordered,Unordered containers use the key type’s == operator and an object of type hash<key_type> to organize their elements.- elements are stored in different buckets, based on the hash codes and '==' operator is used for comparing keys- hash code is generated against the keys, key are accordingly stored in buckets    * hash code should be same for keys with same value    * library provides hash functions for all bult-in types and some library types like strings- for class types, we must provide hash function and a equality comparison function if '==' is not defined- provides faster average access times for elements, as they are stored in different buckets- when storing elements in sorted is prohibitive and there is no natural way to compare elements, then unordered types are best used- supports all operations of their ordered ones</div></div></main><footer> 
+<div id="code-container"><pre><code class="language-cpp"><xmp>
+# <p style="text-align:center">ASSOCIATIVE CONTAINERS</p>
+    Associative containers stores the elements based on the values of keys, ordered types stores their elements in order by comparing the keys using '<' operator defined by key type. Unordered types uses hashes for the keys to store the elements in buckets for faster average access time. There are totaly eight types
+1. map  
+2. set
+3. multi_map
+4. multi_set
+5. unordered map
+6. unordered set
+7. unordered multi_map
+8. unordered multi_set
+
+## map and set contains unique keys
+## map : stores elements of pair type, std::map<T1, T2>  : T1 maps to T2, key = T1,  value = T2
+- elements are key-value pairs 
+- keys are compared using '<' operator, so key type should have defined '<' operator or we should provide comparison function to compare the keys.
+    * if a key is lesser than the other, then 2nd key should not be lesser than 1st
+    * if two keys are not lesser than each other, then they are considered equal
+    * if 1st key is lesser than the 2nd and if 2nd is lesser than the 3rd, then 1st is lesser than 3rd
+    * if 1st key is equal to 2nd and 2nd is equal to 3rd, then 1st is equal to 3rd
+- [] operator supported, keys are the index in to the map, when keys are subscripted, [] operator returns the value associated with the key of the element for which the key matches, or else a new element is constructed with key and value part value initialised and inserted in to the map and then returns value part 
+- as keys acts as index in to the map, they are const by default, we can only change the value associated with it.
+- iterators points to the element in the map, which is a pair type, so on dereferencing returns a pair type consisting of const key and value of the element
+    ex:- std::map<T1, T2> m;
+        auto iter = m.begin();
+        std::pair<const T1, T2> p = *iter;
+
+## set : key is the element's value, std::set<T> 
+- elements are not pairs, key is the element's value
+- elements are stored in the same way as maps
+- since the elements are ordered, finding a key in a set is quick operation compared to other containers
+
+## Adding elements
+- insert memeber inserts elements in to the containers
+- set : insert takes an argument of key type, 
+    * if the key is present it does nothing
+    * key is added otherwise
+- map : insert takes an argument of pair type which should match with the pair type of the element in the map
+    * [key] returns the reference to the value associated with key, which can be used to change the value part, is key is not present, a new element is constructed with key as key_part and value value-initialised, returns the reference to the value
+    * return a pair type consisting of iter, and a bool indicating result of insertion
+    * if key is present, iter points to the element whose key matches with the key passed and bool type will be false to indicated insertion didn't happen as key is already present
+    * if key is not present, a new element is constructed with key and value intialised with value-initialisation and inserted. iter will point to the new element and bool will be true indicating success
+
+## multimap and multiset
+- keys can be repeated
+- no [] operator, as there may be many keys with same value
+- keys with same value are stored adjusent to each other, their order will be based on the insertion order
+- insert member always inserts the key even if key and value are same 
+
+# PAIR type : std::pair<T1, T2>
+- pair type is a library type which has two public members named first and second, both need not be the same type
+    * pairObj.first = first member
+    * pairObj.second = second member
+- construction
+    * {T1,T2} : brace initialisation
+    * std::make_pair(T1,T2) : returns a pair_type containing T1 as first and T2 as second
+    * std::pair<T1,T2>(t1,t2) : t1, t2 are objects of T1, T2 type respectively
+
+## unordered maps and unordered sets
+- elements are unordered,Unordered containers use the key type’s == operator and an object of type hash<key_type> to organize their elements.
+- elements are stored in different buckets, based on the hash codes and '==' operator is used for comparing keys
+- hash code is generated against the keys, key are accordingly stored in buckets
+    * hash code should be same for keys with same value
+    * library provides hash functions for all bult-in types and some library types like strings
+- for class types, we must provide hash function and a equality comparison function if '==' is not defined
+- provides faster average access times for elements, as they are stored in different buckets
+- when storing elements in sorted is prohibitive and there is no natural way to compare elements, then unordered types are best used
+- supports all operations of their ordered ones
+
+
+
+
+
+</xmp></code></pre></div></div></main><footer> 
         <a href="/cpp-primer-5th-edition-solutions/LICENSE.txt" id="license" class="non-image">license</a>
         <a href="/cpp-primer-5th-edition-solutions/myresume.pdf" id="myresume" class="non-image">myresume.pdf</a>    
-        <a href="https://www.linkedin.com/in/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-      <a href="https://github.com/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+        <a href="www.linkedin.com/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <a href="https://github.com/VijaiSankar2006/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
       <a href = "mailto:missingsemicolon.vijai@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
     </footer>
 </body>
-
 </html></body></html>

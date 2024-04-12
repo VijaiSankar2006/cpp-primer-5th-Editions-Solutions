@@ -1,5 +1,229 @@
 <!DOCTYPE html><html><head><title>readme</title>
-<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.md"}</script>
+<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.html"}</script>
+<style type="text/css">
+* {
+    margin:0px;
+    padding:0px;
+    font-family:Garamond;
+}
+
+a:hover {
+    color:rgb(241, 177, 55);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height :5%;
+}
+html {
+   height: 100%;
+   width: 100%; 
+}
+body {
+    height: 100%;
+    width:100%;
+}
+
+main {
+    height:96%;
+    width:100%;
+    display:flex;
+    background-color: rgb(124, 124, 124);
+}
+header {
+    height:100%;
+    width:20%;
+    background-image: -webkit-linear-gradient(rgb(29, 25, 25),rgb(0, 0, 0) );
+}
+
+aside {
+    padding-top:30%;
+    height:80%;
+    width:100%;
+    overflow:auto;
+    color:rgb(209, 209, 209);
+}
+
+
+aside ul {
+    height: fit-content;
+    width:100%;
+    border:0px;
+}
+
+aside h1 {
+    border-bottom: 1px solid  rgb(52, 48, 48);
+    padding-left:60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: expanded;
+}
+aside li {
+    border:0px;
+    height:100%;
+    width:100%;
+    padding-left:10px;
+    border-bottom: 1px solid  rgb(52, 48, 48);
+}
+
+aside li details ul li a{
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    border:0px;
+    color:rgb(209, 209, 209);
+    padding-left: 10px;
+    font-size:1em;
+}
+
+aside li a {
+    border:0px;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(209, 209, 209);
+    padding-left:10px;
+    font-size:1em;
+}
+
+aside details {
+    border:0px;
+}
+aside summary {
+    border:0px;
+    display:flex;
+    width:100%;
+    height: 100%;
+    color:rgb(209, 209, 209);
+    font-size:1em;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+
+aside summary:hover {
+    color:rgb(241, 177, 55);
+}
+
+aside h1 {
+    color:rgb(241, 177, 55);
+}
+#content {
+    width:80%;
+    height:98%;
+    border:0px;
+}
+
+div > nav {
+    border:0px;
+    height:9%;
+    width:100%;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin-left:5px;
+    background:rgb(250, 250, 250);;
+}
+
+div > nav ul {
+    height: 100%;
+    width:50%;
+    list-style-type: none;
+    display: flex;
+}
+
+div > nav ul li {
+    height:100%;
+    width:100%;
+}
+
+div > nav ul li a {
+    height: 80%;
+    width:100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color:rgb(44, 44, 44);
+    padding-top:12px;
+}
+
+#code-container {
+    height:90%;
+    width:98%;
+    overflow: auto;
+    border: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    overflow-x:scroll; 
+    margin-left:5px;
+    color:rgb(85, 85, 85);
+}
+
+pre {
+    display:inline;
+    margin-top:0px;
+    padding: 0px;
+}
+pre > code {
+    display: inline-block;
+    margin-top: 0px;
+    padding:0px;
+}
+xmp {
+    display:flex;
+    margin-top:0px;
+    padding:0px;
+}
+footer {
+    box-shadow: 0px 1px 5px rgb(48, 48, 48);
+    background-color: rgb(124, 124, 124);
+    display:flex;
+    padding-top:5px;
+    height: 4%;
+   width:100%;
+}
+
+footer a.non-image {
+    width:20%;
+    display: inline-block;
+    background-color:rgb(0, 119, 181);
+    margin-right:2px;
+    margin-bottom:4px;
+    height: 100%;
+    padding-top:3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    color:rgb(255, 255, 255)
+}
+
+
+footer a.non-image:hover {
+    color:rgb(241, 177, 55)
+}
+
+footer a {
+    display: inline-block;
+    height: 100%;
+    margin-left:4px;
+}
+#myresume {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="/home/vijai/github/cpp-primer-5th-Editions-Solutions/favicon.ico">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
 <main><header>
             <aside><h1>Index</h1><ul><li><details><summary>DBMS</summary>
 <ul><li><a href = "./codes/DBMS/Database.html">Database.html</a></li><li><a href = "./codes/DBMS/Query.html">Query.html</a></li><li><a href = "./codes/DBMS/Table.html">Table.html</a></li><li><a href = "./codes/DBMS/employees.html">employees.html</a></li><li><a href = "./codes/DBMS/file.html">file.html</a></li><li><a href = "./codes/DBMS/readme.md">readme.md</a></li></details></li><li><details><summary>OtherWorks</summary>
@@ -35,13 +259,94 @@
                                     <li><a href="/cpp-primer-5th-Editions-Solutions/myresume.html">resume</a></li>
                                 </ul>
                           </nav>
-<<div class="code-container"># <p style = "text-align : center"> DYNAMIC MEMORY </p>**1. static memory**      **2. stack memory**      **3. heap**                 * static memory    - global objects, local static objects and class static objects are created in static memory    - created before the first use and destroyed when the program ends * stack memory    - local variables defined in any function is created in stack memory    - created and destroyed when the block is entered and exited* heap memory[Dynamic memory] - a seperate pool of memory for the program to use    - dynamic allocated objects    - creation and destruction is handled by the program # Dynamic memory :## allocation- new T, allocates memory in free store(heap) and constructs the object of type T and returns a pointer to T- new T(optional val), parantheses value initialises the object, if optional value is not provided then built-in types will be initialised with zero, string and other classes will be initialised with their default constructors- new T[sz], allocates memory for sz objects of type t, constructs the objects with default initialisation and returns     pointer to the first element in the array of objects- new T[sz](), all the objects will be value initialised, but won't take a initialiser inside the parantheses- new T[sz]{initialisers..}, list initialises the objects with the corresponding initialiser, if there are less initialisers, then value initialises the rest, if more initialisers are present throws bad_array_new_length exception## deallocation- delete p, destroys the object pointed by p, and frees the memory which is previously alloted by new- delete [] p, destroys the array of objects and frees the memory pointed by p, should have been alloted previously by new    if we don't delete, then memory is not freed untill the program termination leading to memory exhaustion# SMART POINTERSsmart pointers are pointer like library types, which takes care of deallocation of the memory automatically when the objects are destroyed or goes out of scope1) shared_ptr2) unique_ptr3) weak_ptr## shared_ptr- shared_ptr class lets multiple pointers to share the ownership of the same memory, same underlying object is pointed by multiple pointers- std::shared_ptr<T> sp, creates a shared pointer that can point to object of type T, default initialised with null pointer- std::make_shared<T> , allocates memory to hold object of type T and returns a shared_ptr.- std::make_shared<T>(optional_val), value initialises the object- sp.use_count(), returns how many users are sharing the object.- when a shared_ptr is destroyed, use_count is decremented by 1, when use_count decrements to 0, object is destroyed and memory is freed - *sp, yields the object## unique_ptr- unique_ptr owns the object to which it points.- std::unique_ptr<T> up, creates a unique pointer that can point to object of type T, default initialise with null pointer.- std::make_unique<T>, allocates memory and constructs object of type T, and returns a unique pointer- std::make_unique<T>(optional_val), value initialises the object    * up.reset(new T), old memory is destroyed and pointer returned by new is assigned    * up.release(), releases the object it points, then null ptr is assigned    * std::unique_ptr<T> up1(up2) // illegal, no copy or assignment of unique ptrs;    * std::unique_ptr<T> up1;  up1 = new T;    // illegal no copy or assignment of unique ptrs- unique_ptr default initialised to null ptr or pointing to a valid object, a new address can be assigned only by calling reset()## weak_ptr- weak_ptr shares a weak binding to the objects pointed by a shared pointer, (ie) shared_ptr doesn't count weak_ptrs pointing to the same memory to delete - weak_ptrs are used to check before dereferencing if object is still vaild, (ie) atleast one shared_ptr is pointing to it- std::weak_ptr<T> wp = sp; wp points to the object pointed by sp;- wp.lock(), returns a shared_ptr if wp.expired() returns false, (ie) object is still valid, or else a null pointer- wp.expired(), true if object is deleted, false if object is still valid### Dynamic array- T *p = new T[sz], p points to the first element in the array of T objects of size sz- std::shared_ptr<T[]> sp(new T[sz]()), creates a shared_ptr to point an array of T, and new allocates memory to hold sz number of T and value initialises, default initialises in the absence of () and returns a pointer - std::unique_ptr<T[]> up(new T[sz]()), same as above- since the type of the smart pointer is array, they use delete []T when they free memory- [] operator can be used as they are array type.- sp[i], yields the reference to ith object in the array pointed by sp## allocator classallocator class offers independent allocation and construction of objects in the dynamic memory, and allocator is a template- std::allocator<T> al, al is a allocator object which can allocate memory to hold object of type T- al.allocate(n), allocates raw unconstructed memory to hold n objects of type T, and returns a pointer- al.deallocate(p,n), deallocates the memory that helds n objects of type T, p must be previously returned by allocate and n must be size requested during allocation- std::construct_at(q, args), q must point to the memory pointed by p, args must match a constructor of the type pointed by q,- std::destroy(q), destroys the objects pointed by q;  </div></div></main><footer> 
+<div id="code-container"><pre><code class="language-cpp"><xmp>
+# <p style = "text-align : center"> DYNAMIC MEMORY </p>
+**1. static memory**      
+**2. stack memory**      
+**3. heap**           
+      
+* static memory
+    - global objects, local static objects and class static objects are created in static memory
+    - created before the first use and destroyed when the program ends
+ 
+* stack memory
+    - local variables defined in any function is created in stack memory
+    - created and destroyed when the block is entered and exited
+
+* heap memory[Dynamic memory] - a seperate pool of memory for the program to use
+    - dynamic allocated objects
+    - creation and destruction is handled by the program 
+
+# Dynamic memory :
+## allocation
+- new T, allocates memory in free store(heap) and constructs the object of type T and returns a pointer to T
+- new T(optional val), parantheses value initialises the object, if optional value is not provided then built-in types will 
+be initialised with zero, string and other classes will be initialised with their default constructors
+- new T[sz], allocates memory for sz objects of type t, constructs the objects with default initialisation and returns     pointer to the first element in the array of objects
+- new T[sz](), all the objects will be value initialised, but won't take a initialiser inside the parantheses
+- new T[sz]{initialisers..}, list initialises the objects with the corresponding initialiser, if there are less initialisers, then value initialises the rest, if more initialisers are present throws bad_array_new_length exception
+
+## deallocation
+- delete p, destroys the object pointed by p, and frees the memory which is previously alloted by new
+- delete [] p, destroys the array of objects and frees the memory pointed by p, should have been alloted previously by new
+    if we don't delete, then memory is not freed untill the program termination leading to memory exhaustion
+# SMART POINTERS
+smart pointers are pointer like library types, which takes care of deallocation of the memory automatically when the objects are destroyed or goes out of scope
+1) shared_ptr
+2) unique_ptr
+3) weak_ptr
+
+## shared_ptr
+- shared_ptr class lets multiple pointers to share the ownership of the same memory, same underlying object is pointed by multiple pointers
+- std::shared_ptr<T> sp, creates a shared pointer that can point to object of type T, default initialised with null pointer
+- std::make_shared<T> , allocates memory to hold object of type T and returns a shared_ptr.
+- std::make_shared<T>(optional_val), value initialises the object
+- sp.use_count(), returns how many users are sharing the object.
+- when a shared_ptr is destroyed, use_count is decremented by 1, when use_count decrements to 0, object is destroyed and memory is freed 
+- *sp, yields the object
+
+## unique_ptr
+- unique_ptr owns the object to which it points.
+- std::unique_ptr<T> up, creates a unique pointer that can point to object of type T, default initialise with null pointer.
+- std::make_unique<T>, allocates memory and constructs object of type T, and returns a unique pointer
+- std::make_unique<T>(optional_val), value initialises the object
+    * up.reset(new T), old memory is destroyed and pointer returned by new is assigned
+    * up.release(), releases the object it points, then null ptr is assigned
+    * std::unique_ptr<T> up1(up2) // illegal, no copy or assignment of unique ptrs;
+    * std::unique_ptr<T> up1;  up1 = new T;    // illegal no copy or assignment of unique ptrs
+- unique_ptr default initialised to null ptr or pointing to a valid object, a new address can be assigned only by calling reset()
+
+## weak_ptr
+- weak_ptr shares a weak binding to the objects pointed by a shared pointer, (ie) shared_ptr doesn't count weak_ptrs pointing to the same memory to delete 
+- weak_ptrs are used to check before dereferencing if object is still vaild, (ie) atleast one shared_ptr is pointing to it
+- std::weak_ptr<T> wp = sp; wp points to the object pointed by sp;
+- wp.lock(), returns a shared_ptr if wp.expired() returns false, (ie) object is still valid, or else a null pointer
+- wp.expired(), true if object is deleted, false if object is still valid
+
+### Dynamic array
+- T *p = new T[sz], p points to the first element in the array of T objects of size sz
+- std::shared_ptr<T[]> sp(new T[sz]()), creates a shared_ptr to point an array of T, and new allocates memory to hold sz number of T and value initialises, default initialises in the absence of () and returns a pointer 
+- std::unique_ptr<T[]> up(new T[sz]()), same as above
+- since the type of the smart pointer is array, they use delete []T when they free memory
+- [] operator can be used as they are array type.
+- sp[i], yields the reference to ith object in the array pointed by sp
+
+## allocator class
+allocator class offers independent allocation and construction of objects in the dynamic memory, and allocator is a template
+- std::allocator<T> al, al is a allocator object which can allocate memory to hold object of type T
+- al.allocate(n), allocates raw unconstructed memory to hold n objects of type T, and returns a pointer
+- al.deallocate(p,n), deallocates the memory that helds n objects of type T, p must be previously returned by allocate and n must be size requested during allocation
+- std::construct_at(q, args), q must point to the memory pointed by p, args must match a constructor of the type pointed by q,
+- std::destroy(q), destroys the objects pointed by q;  
+
+
+
+</xmp></code></pre></div></div></main><footer> 
         <a href="/cpp-primer-5th-edition-solutions/LICENSE.txt" id="license" class="non-image">license</a>
         <a href="/cpp-primer-5th-edition-solutions/myresume.pdf" id="myresume" class="non-image">myresume.pdf</a>    
-        <a href="https://www.linkedin.com/in/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-      <a href="https://github.com/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+        <a href="www.linkedin.com/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <a href="https://github.com/VijaiSankar2006/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
       <a href = "mailto:missingsemicolon.vijai@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
     </footer>
 </body>
-
 </html></body></html>

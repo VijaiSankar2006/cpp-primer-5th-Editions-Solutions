@@ -1,5 +1,229 @@
 <!DOCTYPE html><html><head><title>readme</title>
-<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.md"}</script>
+<meta property="og:title" content="readme" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="readme"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"readme","url":"/readme.html"}</script>
+<style type="text/css">
+* {
+    margin:0px;
+    padding:0px;
+    font-family:Garamond;
+}
+
+a:hover {
+    color:rgb(241, 177, 55);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height :5%;
+}
+html {
+   height: 100%;
+   width: 100%; 
+}
+body {
+    height: 100%;
+    width:100%;
+}
+
+main {
+    height:96%;
+    width:100%;
+    display:flex;
+    background-color: rgb(124, 124, 124);
+}
+header {
+    height:100%;
+    width:20%;
+    background-image: -webkit-linear-gradient(rgb(29, 25, 25),rgb(0, 0, 0) );
+}
+
+aside {
+    padding-top:30%;
+    height:80%;
+    width:100%;
+    overflow:auto;
+    color:rgb(209, 209, 209);
+}
+
+
+aside ul {
+    height: fit-content;
+    width:100%;
+    border:0px;
+}
+
+aside h1 {
+    border-bottom: 1px solid  rgb(52, 48, 48);
+    padding-left:60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: expanded;
+}
+aside li {
+    border:0px;
+    height:100%;
+    width:100%;
+    padding-left:10px;
+    border-bottom: 1px solid  rgb(52, 48, 48);
+}
+
+aside li details ul li a{
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    border:0px;
+    color:rgb(209, 209, 209);
+    padding-left: 10px;
+    font-size:1em;
+}
+
+aside li a {
+    border:0px;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(209, 209, 209);
+    padding-left:10px;
+    font-size:1em;
+}
+
+aside details {
+    border:0px;
+}
+aside summary {
+    border:0px;
+    display:flex;
+    width:100%;
+    height: 100%;
+    color:rgb(209, 209, 209);
+    font-size:1em;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+
+aside summary:hover {
+    color:rgb(241, 177, 55);
+}
+
+aside h1 {
+    color:rgb(241, 177, 55);
+}
+#content {
+    width:80%;
+    height:98%;
+    border:0px;
+}
+
+div > nav {
+    border:0px;
+    height:9%;
+    width:100%;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin-left:5px;
+    background:rgb(250, 250, 250);;
+}
+
+div > nav ul {
+    height: 100%;
+    width:50%;
+    list-style-type: none;
+    display: flex;
+}
+
+div > nav ul li {
+    height:100%;
+    width:100%;
+}
+
+div > nav ul li a {
+    height: 80%;
+    width:100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color:rgb(44, 44, 44);
+    padding-top:12px;
+}
+
+#code-container {
+    height:90%;
+    width:98%;
+    overflow: auto;
+    border: 3px solid rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    overflow-x:scroll; 
+    margin-left:5px;
+    color:rgb(85, 85, 85);
+}
+
+pre {
+    display:inline;
+    margin-top:0px;
+    padding: 0px;
+}
+pre > code {
+    display: inline-block;
+    margin-top: 0px;
+    padding:0px;
+}
+xmp {
+    display:flex;
+    margin-top:0px;
+    padding:0px;
+}
+footer {
+    box-shadow: 0px 1px 5px rgb(48, 48, 48);
+    background-color: rgb(124, 124, 124);
+    display:flex;
+    padding-top:5px;
+    height: 4%;
+   width:100%;
+}
+
+footer a.non-image {
+    width:20%;
+    display: inline-block;
+    background-color:rgb(0, 119, 181);
+    margin-right:2px;
+    margin-bottom:4px;
+    height: 100%;
+    padding-top:3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    color:rgb(255, 255, 255)
+}
+
+
+footer a.non-image:hover {
+    color:rgb(241, 177, 55)
+}
+
+footer a {
+    display: inline-block;
+    height: 100%;
+    margin-left:4px;
+}
+#myresume {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="/home/vijai/github/cpp-primer-5th-Editions-Solutions/favicon.ico">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
 <main><header>
             <aside><h1>Index</h1><ul><li><details><summary>DBMS</summary>
 <ul><li><a href = "./codes/DBMS/Database.html">Database.html</a></li><li><a href = "./codes/DBMS/Query.html">Query.html</a></li><li><a href = "./codes/DBMS/Table.html">Table.html</a></li><li><a href = "./codes/DBMS/employees.html">employees.html</a></li><li><a href = "./codes/DBMS/file.html">file.html</a></li><li><a href = "./codes/DBMS/readme.md">readme.md</a></li></details></li><li><details><summary>OtherWorks</summary>
@@ -35,13 +259,84 @@
                                     <li><a href="/cpp-primer-5th-Editions-Solutions/myresume.html">resume</a></li>
                                 </ul>
                           </nav>
-<<div class="code-container"># Statements- **declaration statements**- **definition statements**- **expression statements**, expr statements causes the expression to be evaluated- **while,for,do-while**, provides iterative executions- **if,switch**, conditional executions- **continue**, skips the current iteration- **break**, exits a current loop, switch- **goto**, which transfers control to a labeled statement- **try-catch**, defines exception handler- **throw**, raises an exception- **return**, stops the exection of a current execution### Switch-case-default    switch(val), val is value of any expression converted to integral type, initialised declaration is allowed    case l : , l is a label, it should be constant integral expression and the form is [case lable :]    default : , if defalt is empty it should include a null statement.    variable declaration : if the varible's declaration is in a case, if the case is jumped while matching, then variable should not be used otherwise there will be a compiler error. ### while(cond)    condition cannot be empty    initialised declaration is allowed    variable declared in conditon or in the body will be created and initialised and destroyed every iteration### do-while construct    do{        //...body    }while(cond);    variable declaration is not allowed in condition, as it cannot be used in the body as it is out of scope    variable declared in the body is out of scope to while, as the scope ends with the end of the block '}', closing braces### for construct    for( init-statement condition; expr)    init-statement can be expressions, declarations and initialisations ending with a ; making it expr statement    so the form can be written as for( init-expr; cond; expr)    init-expr can be omitted, but should have a null statement,  for( ; cond; expr)    condition can be omitted, the abscence will be considered as true by default , for( ; ; expr)    expr can be omitted too, for( ; ; )### exception handlingexception handling in c++ consists of three concepts **throw,try-catch and exception classes**    throw is of form         throw expression    a throw expression is usually followed by a semicolon, which makes it expression statement    the type of expression determines the kind of expression is thrown    when exception is thrown it terminates the current function and transfer control to a handler that knows how to handle    throw should be used inside a try block for the catch clause to be matched, or else terminate is called    form of try-catch    try{        ....// process    }catch (exception-declaration){        //...handler    }catch (exception-declaration){        //...handler    }    try block will consist of code that might throw an exception, followed by one are more catch clauses    catch has 3 parts, catch keyword, declaration of possibly unnamed object in parantheses and a block. when a catch is selected, the associated block is executed and after finishing, execution continues with the statement immedietly following the last catch clause of the try block    if there is no exception handler is matched, then execution is transferred to the library function terminate    terminate behaviour is system dependent but is guaranteed to stop further excecution of the program  **Exception Classes**          c++ library defines several exception classes that it uses to report problems encountered in std lib functions, and we    can also use these classes in our programs**Four headers**     - exception header - defines the most general kind of exception class exception, It provides only that exception occured but provides no further information- stdexcept header - defines several general purpose exception classes- new header - defines the bad_alloc exception type- type_info header - defines bad_cast exception type</div></div></main><footer> 
+<div id="code-container"><pre><code class="language-cpp"><xmp>
+# Statements
+- **declaration statements**
+- **definition statements**
+- **expression statements**, expr statements causes the expression to be evaluated
+- **while,for,do-while**, provides iterative executions
+- **if,switch**, conditional executions
+- **continue**, skips the current iteration
+- **break**, exits a current loop, switch
+- **goto**, which transfers control to a labeled statement
+- **try-catch**, defines exception handler
+- **throw**, raises an exception
+- **return**, stops the exection of a current execution
+
+### Switch-case-default
+    switch(val), val is value of any expression converted to integral type, initialised declaration is allowed
+    case l : , l is a label, it should be constant integral expression and the form is [case lable :]
+    default : , if defalt is empty it should include a null statement.
+    variable declaration : if the varible's declaration is in a case, if the case is jumped while matching, then variable should not be used otherwise there will be a compiler error. 
+
+### while(cond)
+    condition cannot be empty
+    initialised declaration is allowed
+    variable declared in conditon or in the body will be created and initialised and destroyed every iteration
+
+### do-while construct
+    do{
+        //...body
+    }while(cond);
+
+    variable declaration is not allowed in condition, as it cannot be used in the body as it is out of scope
+    variable declared in the body is out of scope to while, as the scope ends with the end of the block '}', closing braces
+
+### for construct
+    for( init-statement condition; expr)
+    init-statement can be expressions, declarations and initialisations ending with a ; making it expr statement
+    so the form can be written as for( init-expr; cond; expr)
+    init-expr can be omitted, but should have a null statement,  for( ; cond; expr)
+    condition can be omitted, the abscence will be considered as true by default , for( ; ; expr)
+    expr can be omitted too, for( ; ; )
+
+### exception handling
+exception handling in c++ consists of three concepts **throw,try-catch and exception classes**
+    throw is of form 
+        throw expression
+    a throw expression is usually followed by a semicolon, which makes it expression statement
+    the type of expression determines the kind of expression is thrown
+    when exception is thrown it terminates the current function and transfer control to a handler that knows how to handle
+    throw should be used inside a try block for the catch clause to be matched, or else terminate is called
+    form of try-catch
+    try{
+        ....// process
+    }catch (exception-declaration){
+        //...handler
+    }catch (exception-declaration){
+        //...handler
+    }
+
+    try block will consist of code that might throw an exception, followed by one are more catch clauses
+    catch has 3 parts, catch keyword, declaration of possibly unnamed object in parantheses and a block. when a catch is selected, the associated block is executed and after finishing, execution continues with the statement immedietly following the last catch clause of the try block
+    if there is no exception handler is matched, then execution is transferred to the library function terminate
+    terminate behaviour is system dependent but is guaranteed to stop further excecution of the program
+  
+**Exception Classes**      
+    c++ library defines several exception classes that it uses to report problems encountered in std lib functions, and we
+    can also use these classes in our programs
+**Four headers**     
+- exception header - defines the most general kind of exception class exception, It provides only that exception occured but provides no further information
+- stdexcept header - defines several general purpose exception classes
+- new header - defines the bad_alloc exception type
+- type_info header - defines bad_cast exception type
+
+</xmp></code></pre></div></div></main><footer> 
         <a href="/cpp-primer-5th-edition-solutions/LICENSE.txt" id="license" class="non-image">license</a>
         <a href="/cpp-primer-5th-edition-solutions/myresume.pdf" id="myresume" class="non-image">myresume.pdf</a>    
-        <a href="https://www.linkedin.com/in/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-      <a href="https://github.com/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+        <a href="www.linkedin.com/in/vijaishankar2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <a href="https://github.com/VijaiSankar2006/cpp-primer-5th-edition-solutions" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
       <a href = "mailto:missingsemicolon.vijai@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
     </footer>
 </body>
-
 </html></body></html>
