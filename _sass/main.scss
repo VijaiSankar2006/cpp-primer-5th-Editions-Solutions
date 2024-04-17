@@ -218,38 +218,6 @@ footer a {
 }
 
 @media (orientation: portrait) {
-* {
-  margin:0px;
-  padding:0px;
-  font-family:Garamond;
-}
-
-a:hover {
-  color:rgb(241, 177, 55);
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  height :5%;
-}
-html {
- height: 100%;
- width: 100%; 
-}
-body {
-  height: 100%;
-  width:100%;
-}
-
-main {
-  height:96%;
-  width:100%;
-  display:flex;
-  background-color: rgb(124, 124, 124);
-}
   header {
     height:100%;
     width:40%;
