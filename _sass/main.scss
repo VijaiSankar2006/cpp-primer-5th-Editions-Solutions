@@ -36,6 +36,10 @@ header {
   background-image: -webkit-linear-gradient(rgb(29, 25, 25),rgb(0, 0, 0) );
 }
 
+@media (orientation: portrait) {
+  width:40%; 
+}
+
 aside {
   padding-top:30%;
   height:80%;
@@ -216,5 +220,4 @@ footer a {
   background-color: rgb(58, 58, 58);
   color: white;
 }
-
 
