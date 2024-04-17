@@ -37,7 +37,10 @@ header {
 }
 
 @media (orientation: portrait) {
-  width:40%; 
+  header {
+    height: 100%;
+    width:40%;
+  } 
 }
 
 aside {
