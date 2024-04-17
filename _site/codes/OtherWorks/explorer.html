@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head><title>explorer</title>
 <meta property="og:title" content="explorer" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="explorer"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"explorer","url":"/explorer.html"}</script>
 
-<link rel="stylesheet" type="text/css" href="https://github.com/VijaiSankar2006/cpp-primer-5th-Editions-Solutions/blob/2d330931352a7e389b66f727a2a912b1c5de948e/_site/assets/css/styles.css">
-<link rel="icon" type="image/x-icon" href="https://github.com/VijaiSankar2006/cpp-primer-5th-Editions-Solutions/blob/2d330931352a7e389b66f727a2a912b1c5de948e/favicon.ico">  
+<link rel="stylesheet" type="text/css" href="/cpp-primer-5th-Editions-Solutions/_site/assets/css/styles.css">
+<link rel="icon" type="image/x-icon" href="/cpp-primer-5th-Editions-Solutions/favicon.ico">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
@@ -54,8 +54,8 @@ namespace fs = std::filesystem;
 
 std::string header = R"(<!DOCTYPE html><html><head>)";
 std::string csslinks = R"(
-<link rel="stylesheet" type="text/css" href="https://github.com/VijaiSankar2006/cpp-primer-5th-Editions-Solutions/blob/2d330931352a7e389b66f727a2a912b1c5de948e/_site/assets/css/styles.css">
-<link rel="icon" type="image/x-icon" href="https://github.com/VijaiSankar2006/cpp-primer-5th-Editions-Solutions/blob/2d330931352a7e389b66f727a2a912b1c5de948e/favicon.ico">  
+<link rel="stylesheet" type="text/css" href="/cpp-primer-5th-Editions-Solutions/_site/assets/css/styles.css">
+<link rel="icon" type="image/x-icon" href="/cpp-primer-5th-Editions-Solutions/favicon.ico">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
@@ -169,7 +169,7 @@ void Directory(const fs::path &curr, const fs::path &output) {
                     ofile << ".html\"}</script>" << std::endl;
                     copy_header(ofile);
                     ofile << std::endl;
-                    ofile << R"(<<div class="code-container">)";
+                    ofile << R"(<div class="code-container">)";
                     while (std::getline(ifile, line)) {
                         ofile << line;
                     }
