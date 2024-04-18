@@ -1,5 +1,5 @@
 <h1 style = "text-align : center; font-size : 30px; background-color: grey; color : black"> VIJAI SANKAR S </h1>
-<pre>missingsemicolon.vijai@gmail.com   linkedin.com/in/vijaishankar2006     https://github.com/VijaiSankar2006     Chennai</pre>
+<pre>8667603097  missingsemicolon.vijai@gmail.com   linkedin.com/in/vijaishankar2006     https://github.com/VijaiSankar2006     Chennai</pre>
 
 # SUMMARY       
 Self-motivated C++ enthusiast with a GitHub repository showcasing proficiency. Strong problem-solving skills honed through independent study. Prefer onsite work environments to engage directly with teams and immerse fully in development processes. Seeking opportunities to apply skills and learn in a professional setting.  

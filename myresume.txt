@@ -1,5 +1,11 @@
-                                         VIJAI SANKAR S
-missingsemicolon.vijai@gmail.com  linkedin.com/in/vijaishankar2006   https://github.com/VijaiSankar2006     Chennai
+Name    : VIJAI SANKAR S
+Contact : 
+    mobile       : 8667603097
+    email        : missingsemicolon.vijai@gmail.com
+    linkedin     : linkedin.com/in/vijaishankar2006
+    github       : https://github.com/VijaiSankar2006
+    stackoverflow: https://stackoverflow.com/users/22415216
+    location     : Chennai
 
 # SUMMARY       
 Self-motivated C++ enthusiast with a GitHub repository showcasing proficiency. Strong problem-solving skills honed through independent study. Prefer onsite work environments to engage directly with teams and immerse fully in development processes. Seeking opportunities to apply skills and learn in a professional setting.  
