@@ -127,6 +127,7 @@ div > nav {
   width: 100%;
   margin-left: 5px;
   background-image: -webkit-linear-gradient(rgb(29, 25, 25), rgb(0, 0, 0));
+  border-radius:20px;
 }
 
 div > nav ul {
@@ -134,6 +135,7 @@ div > nav ul {
   width: 50%;
   list-style-type: none;
   display: flex;
+  margin-left:2px;
 }
 
 div > nav ul li {
@@ -142,7 +144,7 @@ div > nav ul li {
 }
 
 div > nav ul li a {
-  height: 80%;
+  height: 73%;
   width: 100%;
   display: block;
   text-align: center;
@@ -150,7 +152,10 @@ div > nav ul li a {
   font-weight: bold;
   font-size: large;
   color: rgb(44, 44, 44);
-  padding-top: 12px;
+padding-top: 9px;
+background-color: rgb(13, 110, 253);
+border-radius: 20px;
+margin-top: 2%;
 }
 
 #code-container {
