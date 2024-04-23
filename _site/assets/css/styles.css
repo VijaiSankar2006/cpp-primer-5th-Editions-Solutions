@@ -125,10 +125,8 @@ div > nav {
   height: 2%;
   min-height: 45px;
   width: 100%;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   margin-left: 5px;
-  background: rgb(250, 250, 250);
+  background-image: -webkit-linear-gradient(rgb(29, 25, 25), rgb(0, 0, 0));
 }
 
 div > nav ul {
