@@ -147,9 +147,11 @@ div > nav ul li a {
   font-size: large;
   color: rgb(44, 44, 44);
 padding-top: 9px;
-background-color: rgb(13, 110, 253);
-border-radius: 20px;
 margin-top: 2%;
+}
+#current {
+  border-radius: 20px;
+  background-color: rgb(13, 110, 253);
 }
 #code-container {
   height:90%;

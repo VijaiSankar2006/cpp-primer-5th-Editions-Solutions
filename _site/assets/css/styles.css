@@ -135,8 +135,7 @@ div > nav ul {
   width: 50%;
   list-style-type: none;
   display: flex;
-  margin-left:2px;
-
+  margin-left:3px;
 }
 
 div > nav ul li {
@@ -152,11 +151,14 @@ div > nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: large;
-  color: rgb(44, 44, 44);
+  color: white;
 padding-top: 9px;
-background-color: rgb(13, 110, 253);
-border-radius: 20px;
 margin-top: 2%;
+}
+
+#current {
+  border-radius: 20px;
+  background-color: rgb(13, 110, 253);
 }
 
 #code-container {
