@@ -121,7 +121,7 @@ div > nav {
   min-height: 45px;
   width:100%;
   margin-left:5px;
-  background-image: -webkit-linear-gradient(rgb(29, 25, 25), rgb(0, 0, 0));
+  background-color:white;
   border-radius: 20px;
 }
 
@@ -145,13 +145,14 @@ div > nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: large;
-  color: rgb(44, 44, 44);
+  color:black;
 padding-top: 9px;
 margin-top: 2%;
 }
 #current {
   border-radius: 20px;
   background-color: rgb(13, 110, 253);
+  color:white;
 }
 #code-container {
   height:90%;
